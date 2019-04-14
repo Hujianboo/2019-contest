@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang=”en”>
+<head>
+  <meta charset=”UTF-8″>
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onkeydown="pressKey(event)" >
+  <div id="title">
+    <h1>Sokoban Game</h1>
+  </div>
+  <div class = "game">
+ 
+    <canvas id = "canvas" width = "640" height = "640"></canvas>
+  </div>
+  <button onclick="nextState()" name="nextLevel">nextState</button>
+  <button onclick="Reset()" name="Reset">Reset</button>
+  <button onclick="lastState()" name="lastLevel">lastState</button>
+  <button onclick="preStep()" name="preStep">preStep</button>
+
+  <label>choose level(0~5):</label>
+  <input type="text" onchange="selectState(this.value)">
+  
+  <label>currentLevel:</label>
+  <div id= "detail"></div>
+</body>
+<!-- <script src="js/mapdata100.js"></script> -->
+
+<!-- <script src="js/sokoban.js"></script> -->
+<!-- <script src="js/map.js"></script> -->
+<script src="js/util.js"></script>
+<script src="js/control.js"></script>
+<script src="js/init.js"></script>
+
+
+<!-- <script src="js/init.js"></script> -->
+
+</html>
